@@ -1,41 +1,24 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tugas Praktikum 4</title>
-
-    <!-- Menghubungkan file CSS -->
+    <title>Data Mahasiswa</title>
+    <!-- Hubungkan CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <h1>Data Mahasiswa</h1>
 
-        <!-- Judul halaman -->
-        <h1>Tugas Praktikum 4</h1>
-        <p class="subtitle">HTML, CSS dan JavaScript</p>
+    <!-- Tombol tampil -->
+    <button class="tampil" onclick="tampilkanID()">Tampilkan ID</button>
 
-        <!-- Tombol untuk membuat ID -->
-        <div class="button-container">
-            <button id="btnBuat" onclick="buatID()">
-                Buat ID
-            </button>
+    <!-- Tombol hapus -->
+    <button class="hapus" onclick="hapusID()">Hapus ID</button>
 
-            <!-- Tombol untuk menghapus ID -->
-            <button id="btnHapus" onclick="hapusID()">
-                Hapus ID
-            </button>
-        </div>
+    <!-- Tempat kartu -->
+    <div id="data"></div>
 
-        <!-- Tempat persegi panjang ID akan ditampilkan -->
-        <div id="areaID"></div>
-
-    </div>
-
-    <!-- Menghubungkan file JavaScript -->
+    <!-- Hubungkan JS -->
     <script src="script.js"></script>
-
 </body>
 </html>
